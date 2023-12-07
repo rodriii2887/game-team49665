@@ -18,7 +18,8 @@ body {
 header {
     position: fixed;
     width: 100%;
-    z-index: 1;
+    top: 0%;
+    z-index: 200;
 }
 
 .header {
@@ -421,5 +422,53 @@ footer div a img {
     footer {
         display: flex;
         flex-direction: column;
+    }
+}
+
+/* PAGINA XBOX */
+
+.titulo{
+    text-align: center;
+    margin-top: 10%;
+    color: #fff;
+}
+
+.grid-tendencias{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: 250px;
+    gap: 30px;
+    margin: 30px;
+    object-fit: cover;
+    position: relative
+}
+
+
+.grid-tendencias div{
+    position: relative;
+}
+
+.grid-tendencias div h3{
+    position: absolute;
+    color: #fff;
+    font-size: 15px;
+    margin: 10px;;
+}
+
+.grid-tendencias div a img{
+    width: 100%;
+    height: 90%;
+    border-radius: 20px;
+}
+
+@media screen and (max-width:850px){
+    .grid-tendencias{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media screen and (max-width:550px){
+    main .titulo h1{
+        display: none;
     }
 }
