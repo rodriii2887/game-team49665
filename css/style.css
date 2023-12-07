@@ -452,7 +452,7 @@ footer div a img {
     }
 }
 
-/* PAGINA TENDENCIAS */
+/* PAGINAS NAV*/
 
 .titulo{
     text-align: center;
@@ -517,5 +517,11 @@ footer div a img {
 @media screen and (max-width:500px){
     .grid-tendencias div a img{
         height: 75%;
+    }
+}
+
+@media screen and (max-width:400px){
+    .grid-tendencias{
+        grid-template-columns: repeat(1, 1fr);
     }
 }
