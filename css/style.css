@@ -29,7 +29,6 @@ header {
     align-items: center;
 }
 
-
 .header div a img {
     width: 50px;
     height: 50px;
@@ -76,8 +75,8 @@ header nav ul li a {
     color: #f4f4f4;
 }
 
-header nav ul li :hover{
-    color: rgb(255, 136, 0); 
+header nav ul li :hover {
+    color: rgb(255, 136, 0);
     transition: 0.2s;
 }
 
@@ -100,14 +99,13 @@ header nav ul li :hover{
     grid-template-columns: 30% 30% 30%;
     justify-content: center;
     align-items: center;
-    gap: 40px;
+    gap: 20px;
 }
 
 .grid-padre h2 {
     grid-area: h2;
     margin-top: 50px;
-    background-image: url(../img/backgroud.png);
-    height: 50px;
+    background-color: #323232;
 }
 
 .grid-padre h2 a {
@@ -118,10 +116,9 @@ header nav ul li :hover{
 .grid-padre .reserva {
     grid-area: reserva;
     margin-top: 40px;
-    background-image: url(../img/backgroud.png);
     width: 100%;
-    height: 50px;
     margin-bottom: 20px;
+    background-color:#323232
 }
 
 .grid-padre .img1 {
@@ -172,7 +169,6 @@ header nav ul li :hover{
     grid-area: img12;
 }
 
-
 .grid-padre div a img {
     width: 100%;
     height: 100%;
@@ -186,12 +182,12 @@ header nav ul li :hover{
     transition: 0.2s;
 }
 
-.grid-padre h2 :hover{
+.grid-padre h2 :hover {
     color: rgb(255, 136, 0);
     transition: 0.2s;
 }
 
-.grid-padre div h3{
+.grid-padre div h3 {
     color: #fff;
     font-size: 18px;
     margin-bottom: 10px;
@@ -202,24 +198,6 @@ header nav ul li :hover{
     -webkit-line-clamp: 1;
     -webkit-box-orient: vertical;
 }
-
-
-@media screen and (max-width:800px) {
-    .grid-padre {
-        display: grid;
-        grid-template-columns: 40% 40%;
-        grid-template-areas: 
-            "h2 h2"
-            "img1 img2"
-            "img3 img4"
-            "img5 img6"
-            "reserva reserva"
-            "img7 img8"
-            "img9 img10"
-            "img11 img12";
-    }
-}
-
 
 /* comentarios */
 
@@ -244,19 +222,6 @@ header nav ul li :hover{
     margin: 20px;
     color: #949494;
     font-size: 19px;
-}
-
-@media screen and (max-width:800px) {
-    .comentario-faker {
-        flex-wrap: wrap;
-    }
-
-    .comentario-faker img {
-        width: 300px;
-        height: 200px;
-        margin-top: 20px;
-    }
-
 }
 
 
@@ -313,7 +278,6 @@ header nav ul li :hover{
     color: #999;
 }
 
-
 .item .comen .comentarios-user {
     font-size: 45px;
     color: #fff;
@@ -323,13 +287,6 @@ header nav ul li :hover{
     width: 45px;
     flex: 0 0 45px;
 }
-
-@media screen and (max-width:650px) {
-    .item {
-        flex-wrap: wrap;
-    }
-}
-
 
 /* main usuario */
 
@@ -421,6 +378,28 @@ footer div a img {
     height: 30px;
 }
 
+footer .redes{
+    width: 20%;
+    display: flex;
+    justify-content: start;
+    align-items: end;
+    margin-right: 15px;
+}
+
+footer .info{
+    display: flex;
+    margin-right: 20px;
+    background-color: black;
+    width: 70%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+footer .info div{
+    margin-right: 50px;
+}
+
+
 .redes {
     display: flex;
     justify-content: center;
@@ -439,28 +418,20 @@ footer div a img {
     margin: 10px;
 }
 
-.redes :hover{
+.redes :hover {
     transform: scale(1.2);
     transition: 0.2s;
 }
 
-
-@media screen and (max-width:650px) {
-    footer {
-        display: flex;
-        flex-direction: column;
-    }
-}
-
 /* PAGINAS NAV*/
 
-.titulo{
+.titulo {
     text-align: center;
     margin-top: 20px;
     color: #fff;
 }
 
-.grid-tendencias{
+.grid-tendencias {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-auto-rows: 250px;
@@ -471,11 +442,11 @@ footer div a img {
 }
 
 
-.grid-tendencias div{
+.grid-tendencias div {
     position: relative;
 }
 
-.grid-tendencias div h3{
+.grid-tendencias div h3 {
     position: absolute;
     color: #fff;
     font-size: 15px;
@@ -487,41 +458,151 @@ footer div a img {
     -webkit-box-orient: vertical;
 }
 
-.grid-tendencias div a img{
+.grid-tendencias div a img {
     width: 100%;
     height: 90%;
     border-radius: 20px;
     position: relative;
 }
 
-.grid-tendencias div a img:hover{
-    transform: scale(1.1);
+.grid-tendencias div a img:hover {
+    transform: scale(1.05);
     transition: 0.2s;
 }
 
-@media screen and (max-width:850px){
-    .grid-tendencias{
-        grid-template-columns: repeat(2, 1fr);
-    }
-    .grid-tendencias .grid-item1{
-        display: none;
-    }
-}
 
-@media screen and (max-width:650px){
-    .grid-tendencias div a img{
-        height: 85%;
-    }
-}
+/* MEDIA QUERY */
 
 @media screen and (max-width:500px){
-    .grid-tendencias div a img{
-        height: 75%;
+    .header div a img{
+        width: 40px;
+        height: 40px;
+    }
+}
+
+
+@media screen and (max-width:500px){
+.header .user a {
+    font-size: 25px;
     }
 }
 
 @media screen and (max-width:400px){
-    .grid-tendencias{
-        grid-template-columns: repeat(1, 1fr);
+    header nav{
+        font-size: 12px;
     }
 }
+
+@media screen and (max-width:800px) {
+    .grid-padre {
+        display: grid;
+        grid-template-columns: 45% 45%;
+        grid-template-areas:
+            "h2 h2"
+            "img1 img2"
+            "img3 img4"
+            "img5 img6"
+            "reserva reserva"
+            "img7 img8"
+            "img9 img10"
+            "img11 img12";
+    }
+}
+
+@media screen and (max-width:800px){
+    .grid-padre div h3{
+        font-size: 13px;
+    }
+}
+
+@media screen and (max-width:800px) {
+    .comentario-faker {
+        flex-wrap: wrap;
+    }
+
+    .comentario-faker img {
+        width: 300px;
+        height: 200px;
+        margin-top: 20px;
+    }
+}
+
+@media screen and (max-width:850px) {
+    .grid-tendencias {
+        grid-template-columns: repeat(2, 1fr);
+        justify-content: center;
+    }
+
+    .grid-tendencias .grid-item1 {
+        display: none;
+    }
+}
+
+@media screen and (max-width:650px) {
+    .grid-tendencias div a img {
+        height: 85%;
+    }
+}
+
+@media screen and (max-width:535px) {
+    .grid-tendencias div a img {
+        height: 70%;
+    }
+}
+
+@media screen and (max-width:450px) {
+    .grid-tendencias div a img {
+        height: 65%;
+    }
+}
+
+@media screen and (max-width:400px) {
+    .grid-tendencias {
+        grid-template-columns: repeat(1, 1fr);
+        width: 85%;
+        height: 100%;
+    }
+
+
+}
+
+@media screen and (max-width:740px) {
+    .item .comen1 {
+        display: none;
+    }
+}
+
+@media screen and (max-width:650px) {
+    .item {
+        flex-wrap: wrap;
+    }
+}
+
+@media screen and (max-width:720px) {
+    footer .redes {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width:720px) {
+    footer .info {
+        display: flex;
+        flex-direction: column;
+        margin-left: 20px;
+    }
+}
+
+@media screen and (max-width:650px){
+    footer .redes {
+        margin-bottom: 10px;
+    }
+
+    footer div h3{
+    }
+
+    footer div p{
+        font-size: 12px;
+    }
+}
+
