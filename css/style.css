@@ -623,6 +623,95 @@ footer .info div{
 }
 
 
+            /* COMPRAS */
+
+.cesta{
+    display: flex;
+    margin-top: 40px;
+}
+
+.cesta .contenedor-carrito{
+    width: 70%;
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.cesta .contenedor-carrito h2{
+    color: #fff;
+    text-align: start;
+}
+
+.cesta .contenedor-carrito .contenedor-info-carrito{
+    display: flex;
+    background-color: #323232;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.cesta .contenedor-carrito .contenedor-info-carrito i{
+    font-size: 72px;
+    color:#ff5400;
+}
+
+.cesta .contenedor-carrito .contenedor-info-carrito h3{
+    color: #fff;
+    margin: 20px 20px 20px 20px;
+}
+
+.cesta .contenedor-carrito .contenedor-info-carrito p{
+    text-align: center;
+    color: #999;
+}
+
+.cesta .contenedor-carrito .contenedor-info-carrito a{
+    margin: 10px;
+}
+
+.cesta .contenedor-resumen{
+    width: 30%;
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.cesta .contenedor-resumen h2{
+    color: #fff;
+    text-align: start;
+    position: sticky;
+}
+
+.cesta .contenedor-resumen .contenedor-info-resumen{
+    display: flex;
+    flex-direction: column;
+    background-color: #323232;
+    border-radius: 10px;
+}
+
+.cesta .contenedor-resumen .contenedor-info-resumen .span{
+    display: flex;
+    justify-content: space-between;
+}
+
+.cesta .contenedor-resumen .contenedor-info-resumen .span p{
+    color: #999;
+}
+
+
+.cesta .contenedor-resumen .contenedor-info-resumen div{
+    margin: 10px;
+}
+
+.cesta .contenedor-resumen .info-boton{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
 
 /* MEDIA QUERY */
 
@@ -795,5 +884,23 @@ footer .info div{
 
     .visuales .pictures .contenedor-img img{
         margin: 5px 5px 5px 5px;
+    }
+} 
+
+
+               /* CARRITO */
+
+
+@media screen and (max-width:620px){
+    .cesta{
+        flex-wrap: wrap;
+    }
+
+    .cesta .contenedor-carrito{
+        width: 95%;
+    }
+
+    .cesta .contenedor-resumen{
+        width: 95%;
     }
 }
