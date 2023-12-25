@@ -389,7 +389,6 @@ footer .redes{
 footer .info{
     display: flex;
     margin-right: 20px;
-    background-color: black;
     width: 70%;
     display: flex;
     justify-content: space-evenly;
@@ -470,6 +469,160 @@ footer .info div{
     transition: 0.2s;
 }
 
+/* PAGINA FC24 */
+
+.shop{
+    display: flex;
+    justify-content: space-evenly;
+    margin: 40px 0 40px 0;
+}
+
+
+.shop img{
+    width: 50%;
+    border-radius: 25px;
+    margin: 0 10px 0 20px;
+}
+
+
+
+.shop div h1{
+    font-size: 36px;
+    color: #fff;
+    margin: 20px;
+}
+
+.shop .info-shop{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color:#323232;
+    width: 50%;
+    border-radius: 25px;
+    margin: 0 20px 0 10px;
+}
+
+.shop .info-shop h4{
+    color: #fff;
+    margin: 30px;
+}
+
+.shop .info-shop a{
+    margin-top: 20px;
+    width: 55%;
+}
+
+.info-juego{
+    background-color: #323232;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.info-juego div h2{
+    color: #fff;
+    margin-top: 20px;
+}
+
+.info-juego p{
+    color: #999;
+    margin-inline: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.visuales h2{
+    color: #fff;
+    margin:20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.visuales .video{
+    display: flex;
+    justify-content: center;
+}
+
+.visuales .pictures{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.visuales .pictures .img-fc{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin: 15px;
+}
+
+.visuales .pictures .img-fc img{
+    width: 100%;
+    border-radius: 15px;
+    margin: 10px 10px 10px 10px;
+}
+
+
+.visuales .pictures .contenedor-img{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.visuales .pictures .contenedor-img img{
+    width: 45%;
+    border-radius: 15px;
+    margin: 10px;
+    height: 100%;
+}
+
+.configuraciones{
+    display: flex;
+    flex-direction: column;
+}
+
+.configuraciones h2{
+    text-align: center;
+    color: #fff;
+    margin: 30px 20px 30px 20px;
+}
+
+.configuraciones .config{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 10px 20px 10px 20px;
+}
+
+.configuraciones .config .minima h3{
+    text-align: center;
+    color: #fff;
+    font-size: 25px;
+}
+
+.configuraciones .config .minima ul li{
+    text-decoration: none;
+    list-style: none;
+    color: #999;
+}
+
+.configuraciones .config .recomendada h3{
+    text-align: center;
+    color: #fff;
+    font-size: 25px;
+}
+
+.configuraciones .config .recomendada ul li{
+    text-decoration: none;
+    list-style: none;
+    color: #999;
+}
+
+
 
 /* MEDIA QUERY */
 
@@ -538,7 +691,7 @@ footer .info div{
     }
 }
 
-@media screen and (max-width:650px) {
+@media screen and (max-width:750px) {
     .grid-tendencias div a img {
         height: 85%;
     }
@@ -562,8 +715,6 @@ footer .info div{
         width: 85%;
         height: 100%;
     }
-
-
 }
 
 @media screen and (max-width:740px) {
@@ -598,11 +749,51 @@ footer .info div{
         margin-bottom: 10px;
     }
 
-    footer div h3{
-    }
-
     footer div p{
         font-size: 12px;
     }
 }
 
+         /* fc24 */
+
+
+ @media screen and (max-width:760px){
+
+    .shop{
+        flex-wrap: wrap;
+    }
+        
+    .shop img{
+        width: 70%;
+        margin-bottom: 20px;
+        margin: 0px 0px 20px 0px;
+    }
+        
+    .shop .info-shop{
+        width: 70%;
+        margin: 0px;
+    }
+        
+    .shop .info-shop a{
+        margin-bottom: 20px;
+    }
+        
+    .shop div h1{
+        font-size: 26px;
+    }
+}
+
+@media screen and (max-width:960px){
+    .visuales .pictures{
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .visuales .pictures .img-fc img{
+        margin: 15px;
+    }
+
+    .visuales .pictures .contenedor-img img{
+        margin: 5px 5px 5px 5px;
+    }
+}
