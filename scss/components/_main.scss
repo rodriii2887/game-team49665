@@ -1,0 +1,290 @@
+.grid-padre{
+    display: grid;
+    grid-template-areas:
+        "h2 h2 h2"
+        "img1 img2 img3"
+        "img4 img5 img6"
+        "reserva reserva reserva"
+        "img7 img8 img9"
+        "img10 img11 img12";
+    grid-template-rows: 1fr;
+    grid-template-columns: 30% 30% 30%;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    h2{
+        grid-area: h2;
+        margin-top: 50px;
+        background-color: #323232;
+        &:hover{
+            color: rgb(255, 136, 0);
+            transition: 0.2s;
+        }
+        a{
+            grid-area: h2;
+            text-decoration: none;
+        }
+    }
+
+    div{
+        a{
+            img{
+                width: 100%;
+                height: 100%;
+                border-radius: 10px;
+                margin-bottom: 10px;
+                margin-top: 10px;
+                &:hover{
+                    transform: scale(1.05);
+                    transition: 0.2s;
+                }
+            }
+        }
+        h3{
+            color: #fff;
+            font-size: 18px;
+            margin-bottom: 10px;
+            margin-top: 5px;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            display: -webkit-box;
+            -webkit-line-clamp: 1;
+            -webkit-box-orient: vertical;
+        }
+    }
+    .img1{
+        grid-area: img1;
+        a{
+            img{
+            }
+        }
+        h3{
+
+        }
+    }
+    .img2{
+        grid-area: img2;
+        a{
+            img{
+            }
+        }
+        h3{
+            }
+    }
+    .img3{
+        grid-area: img3;
+        a{
+            img{
+            }
+        }
+        h3{    
+        }
+    }
+    .img4{
+        grid-area: img4;
+        a{
+            img{
+            }
+        }
+        h3{   
+        }
+    }
+    .img5{
+        grid-area: img5;
+        a{
+            img{
+            }
+        }
+        h3{    
+        }
+    }
+    .img6{
+        grid-area: img6;
+        a{
+            img{
+            }
+        }
+        h3{   
+        }
+    }
+
+    .reserva{
+        grid-area: reserva;
+        margin-top: 40px;
+        width: 100%;
+        margin-bottom: 20px;
+        background-color:#323232;
+    
+        a{
+        }
+    }
+    .img7{
+        grid-area: img7;
+        a{
+            img{
+            }
+        }
+        h3{    
+        }
+    }
+    .img8{
+        grid-area: img8;
+        a{
+            img{
+            }
+        }
+        h3{   
+        }
+    }
+    .img9{
+        grid-area: img9;
+        a{
+            img{
+            }
+        }
+        h3{   
+        }
+    }
+    .img10{
+        grid-area: img10;
+        a{
+            img{
+            }
+        }
+        h3{    
+        }
+    }
+    .img11{
+        grid-area: img11;
+        a{
+            img{
+            }
+        }
+        h3{    
+        }
+    }
+    .img12{
+        grid-area: img12;
+        a{
+            img{
+            }
+        }
+        h3{    
+        }
+    }
+
+}    
+
+section{
+    .comentario-faker{
+        margin-top: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #323232;
+        .faker{
+        }
+        .boton{
+            text-align: center;
+            margin: 20px;
+            p{
+                margin: 20px;
+                color: #949494;
+                font-size: 19px;
+            }
+            a{
+                width: 200px;
+            }
+        }
+    }
+    .item{
+        display: flex;
+        justify-content: center;
+        position: relative;
+        .comen{
+            border-radius: 10px;
+            margin: 10px;
+            background-color: #323232;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            position: relative;
+            padding: 15px;
+            .usuarios{
+                display: flex;
+                .comentarios-user{
+                    font-size: 45px;
+                    color: #fff;
+                    padding-right: 20px;
+                    margin-right: 15px;
+                    height: 45px;
+                    width: 45px;
+                    flex: 0 0 45px;
+                
+                    i{
+                    }
+                }
+                .info{
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    color: #fff;
+                    padding-top: 10px;
+                    .estrella{
+                        background-image: url(../img/stars-rating.svg);
+                        background-position: 0;
+                        background-repeat: no-repeat;
+                        background-size: cover;
+                        height: 12px;
+                        width: 80px;
+                        position: relative;
+                        transform-origin: left;
+                        transform: scale(.8);
+                    }
+                    a{
+                        color: #fff;
+                        text-decoration: none;
+                    }
+                }
+            }
+                
+            .lorem{
+                margin: 5px;
+                color: #999;
+                p{
+                }
+            }
+        }
+        
+
+    }
+}
+
+.suscripcion{
+    display: flex;
+    padding: 20px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: #323232;
+    h3{
+        color: #f4f4f4;
+        text-align: center;
+        margin-top: 30px;
+    }
+    p{
+        color: #999;
+    }
+    a{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        img{
+            width: 10%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    }
+}

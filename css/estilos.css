@@ -2,3 +2,243 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box; }
+
+body {
+  background-color: #272727;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; }
+
+header {
+  width: 100%;
+  top: 0%;
+  z-index: 200; }
+  header .header {
+    background-color: #000000e7;
+    display: flex;
+    justify-content: space-between;
+    align-items: center; }
+    header .header div a img {
+      width: 50px;
+      height: 50px;
+      margin-left: 20px; }
+    header .header .user {
+      margin-right: 20px; }
+      header .header .user a {
+        color: #f4f4f4;
+        text-decoration: none;
+        font-size: 30px;
+        padding: 5px; }
+  header nav {
+    background-color: #9c858571;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 10px;
+    padding-right: 20px;
+    height: 25px;
+    width: 100%;
+    line-height: 0; }
+    header nav ul {
+      display: flex;
+      list-style: none; }
+    header nav li {
+      padding: 20px; }
+      header nav li:hover {
+        color: #ff8800;
+        transition: 0.2s; }
+      header nav li a {
+        text-decoration: none;
+        list-style: none;
+        color: #f4f4f4; }
+
+.grid-padre {
+  display: grid;
+  grid-template-areas: "h2 h2 h2" "img1 img2 img3" "img4 img5 img6" "reserva reserva reserva" "img7 img8 img9" "img10 img11 img12";
+  grid-template-rows: 1fr;
+  grid-template-columns: 30% 30% 30%;
+  justify-content: center;
+  align-items: center;
+  gap: 20px; }
+  .grid-padre h2 {
+    grid-area: h2;
+    margin-top: 50px;
+    background-color: #323232; }
+    .grid-padre h2:hover {
+      color: #ff8800;
+      transition: 0.2s; }
+    .grid-padre h2 a {
+      grid-area: h2;
+      text-decoration: none; }
+  .grid-padre div a img {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    margin-top: 10px; }
+    .grid-padre div a img:hover {
+      transform: scale(1.05);
+      transition: 0.2s; }
+  .grid-padre div h3 {
+    color: #fff;
+    font-size: 18px;
+    margin-bottom: 10px;
+    margin-top: 5px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical; }
+  .grid-padre .img1 {
+    grid-area: img1; }
+  .grid-padre .img2 {
+    grid-area: img2; }
+  .grid-padre .img3 {
+    grid-area: img3; }
+  .grid-padre .img4 {
+    grid-area: img4; }
+  .grid-padre .img5 {
+    grid-area: img5; }
+  .grid-padre .img6 {
+    grid-area: img6; }
+  .grid-padre .reserva {
+    grid-area: reserva;
+    margin-top: 40px;
+    width: 100%;
+    margin-bottom: 20px;
+    background-color: #323232; }
+  .grid-padre .img7 {
+    grid-area: img7; }
+  .grid-padre .img8 {
+    grid-area: img8; }
+  .grid-padre .img9 {
+    grid-area: img9; }
+  .grid-padre .img10 {
+    grid-area: img10; }
+  .grid-padre .img11 {
+    grid-area: img11; }
+  .grid-padre .img12 {
+    grid-area: img12; }
+
+section .comentario-faker {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #323232; }
+  section .comentario-faker .boton {
+    text-align: center;
+    margin: 20px; }
+    section .comentario-faker .boton p {
+      margin: 20px;
+      color: #949494;
+      font-size: 19px; }
+    section .comentario-faker .boton a {
+      width: 200px; }
+
+section .item {
+  display: flex;
+  justify-content: center;
+  position: relative; }
+  section .item .comen {
+    border-radius: 10px;
+    margin: 10px;
+    background-color: #323232;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: relative;
+    padding: 15px; }
+    section .item .comen .usuarios {
+      display: flex; }
+      section .item .comen .usuarios .comentarios-user {
+        font-size: 45px;
+        color: #fff;
+        padding-right: 20px;
+        margin-right: 15px;
+        height: 45px;
+        width: 45px;
+        flex: 0 0 45px; }
+      section .item .comen .usuarios .info {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        color: #fff;
+        padding-top: 10px; }
+        section .item .comen .usuarios .info .estrella {
+          background-image: url(../img/stars-rating.svg);
+          background-position: 0;
+          background-repeat: no-repeat;
+          background-size: cover;
+          height: 12px;
+          width: 80px;
+          position: relative;
+          transform-origin: left;
+          transform: scale(0.8); }
+        section .item .comen .usuarios .info a {
+          color: #fff;
+          text-decoration: none; }
+    section .item .comen .lorem {
+      margin: 5px;
+      color: #999; }
+
+.suscripcion {
+  display: flex;
+  padding: 20px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-color: #323232; }
+  .suscripcion h3 {
+    color: #f4f4f4;
+    text-align: center;
+    margin-top: 30px; }
+  .suscripcion p {
+    color: #999; }
+  .suscripcion a {
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+    .suscripcion a img {
+      width: 10%;
+      display: flex;
+      justify-content: center;
+      align-items: center; }
+
+footer {
+  background-color: #101010;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 10px;
+  bottom: 0;
+  width: 100%; }
+  footer .info {
+    display: flex;
+    margin-right: 20px;
+    width: 70%;
+    display: flex;
+    justify-content: space-evenly; }
+    footer .info div {
+      margin-right: 50px; }
+      footer .info div h3 {
+        color: #f4f4f4; }
+      footer .info div p {
+        color: #fff; }
+  footer div a img {
+    width: 100%;
+    height: 30px; }
+  footer .redes {
+    width: 20%;
+    display: flex;
+    justify-content: start;
+    align-items: end;
+    margin-right: 15px; }
+    footer .redes div a img:hover {
+      transform: scale(1.2);
+      transition: 0.2s; }
+    footer .redes .fb {
+      margin: 10px; }
+    footer .redes .ig {
+      margin: 10px; }
+    footer .redes .tw {
+      margin: 10px; }
