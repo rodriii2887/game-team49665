@@ -204,6 +204,240 @@ section .item {
       justify-content: center;
       align-items: center; }
 
+.registro {
+  background-color: #323232;
+  margin: 40px 0 40px 0;
+  min-height: 65vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; }
+  .registro h1 {
+    color: #fff;
+    font-size: 35px;
+    text-align: center; }
+  .registro .inicio-sesion {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%; }
+    .registro .inicio-sesion a img {
+      width: 50px;
+      margin: 20px; }
+  .registro .formulario {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; }
+    .registro .formulario input {
+      width: 50%;
+      height: 48px;
+      margin: 10px;
+      padding: 5px;
+      color: #fff;
+      border: 0;
+      border-radius: 10px;
+      background-color: rgba(15, 15, 15, 0.4); }
+
+.titulo {
+  text-align: center;
+  margin-top: 20px;
+  color: #fff; }
+
+.grid-tendencias {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-auto-rows: 250px;
+  gap: 30px;
+  margin: 30px;
+  object-fit: cover;
+  position: relative; }
+  .grid-tendencias div {
+    position: relative; }
+    .grid-tendencias div h3 {
+      position: absolute;
+      color: #fff;
+      font-size: 15px;
+      margin: 15px;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      display: -webkit-box;
+      -webkit-line-clamp: 1;
+      -webkit-box-orient: vertical; }
+    .grid-tendencias div a img {
+      width: 100%;
+      height: 90%;
+      border-radius: 20px;
+      position: relative; }
+      .grid-tendencias div a img:hover {
+        transform: scale(1.05);
+        transition: 0.2s; }
+
+.shop {
+  display: flex;
+  justify-content: space-evenly;
+  margin: 40px 0 40px 0; }
+  .shop img {
+    width: 50%;
+    border-radius: 25px;
+    margin: 0 10px 0 20px; }
+  .shop div h1 {
+    font-size: 36px;
+    color: #fff;
+    margin: 20px; }
+
+.info-shop {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #323232;
+  width: 50%;
+  border-radius: 25px;
+  margin: 0 20px 0 10px; }
+  .info-shop h4 {
+    color: #fff;
+    margin: 30px; }
+  .info-shop a {
+    margin-top: 20px;
+    width: 55%; }
+
+.info-juego {
+  background-color: #323232;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; }
+  .info-juego div h2 {
+    color: #fff;
+    margin-top: 20px; }
+  .info-juego p {
+    color: #999;
+    margin-inline: 20px;
+    margin-bottom: 20px;
+    text-align: center; }
+
+.visuales h2 {
+  color: #fff;
+  margin: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+.visuales .video {
+  display: flex;
+  justify-content: center; }
+
+.visuales .pictures {
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+  .visuales .pictures .img-fc {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin: 15px; }
+    .visuales .pictures .img-fc img {
+      width: 100%;
+      border-radius: 15px;
+      margin: 10px 10px 10px 10px; }
+  .visuales .pictures .contenedor-img {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap; }
+    .visuales .pictures .contenedor-img img {
+      width: 45%;
+      border-radius: 15px;
+      margin: 10px;
+      height: 100%; }
+
+.configuraciones {
+  display: flex;
+  flex-direction: column; }
+  .configuraciones h2 {
+    text-align: center;
+    color: #fff;
+    margin: 30px 20px 30px 20px; }
+  .configuraciones .config {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 10px 20px 10px 20px; }
+    .configuraciones .config .minima h3 {
+      text-align: center;
+      color: #fff;
+      font-size: 25px; }
+    .configuraciones .config .minima ul li {
+      text-decoration: none;
+      list-style: none;
+      color: #999; }
+    .configuraciones .config .recomendada h3 {
+      text-align: center;
+      color: #fff;
+      font-size: 25px; }
+    .configuraciones .config .recomendada ul li {
+      text-decoration: none;
+      list-style: none;
+      color: #999; }
+
+.cesta {
+  display: flex;
+  min-height: 75vh;
+  display: flex;
+  justify-content: center; }
+  .cesta .contenedor-carrito {
+    width: 70%;
+    margin: 20px;
+    display: flex;
+    flex-direction: column; }
+    .cesta .contenedor-carrito h2 {
+      color: #fff;
+      text-align: start; }
+    .cesta .contenedor-carrito .contenedor-info-carrito {
+      display: flex;
+      background-color: #323232;
+      flex-direction: column;
+      align-items: center;
+      border-radius: 10px;
+      padding: 10px; }
+      .cesta .contenedor-carrito .contenedor-info-carrito i {
+        font-size: 72px;
+        color: #ff5400; }
+      .cesta .contenedor-carrito .contenedor-info-carrito h3 {
+        color: #fff;
+        margin: 20px 20px 20px 20px; }
+      .cesta .contenedor-carrito .contenedor-info-carrito p {
+        text-align: center;
+        color: #999; }
+      .cesta .contenedor-carrito .contenedor-info-carrito a {
+        margin: 10px; }
+  .cesta .contenedor-resumen {
+    width: 30%;
+    margin: 20px;
+    display: flex;
+    flex-direction: column; }
+    .cesta .contenedor-resumen h2 {
+      color: #fff;
+      text-align: start;
+      position: sticky; }
+    .cesta .contenedor-resumen .contenedor-info-resumen {
+      display: flex;
+      flex-direction: column;
+      background-color: #323232;
+      border-radius: 10px; }
+      .cesta .contenedor-resumen .contenedor-info-resumen .span {
+        display: flex;
+        justify-content: space-between; }
+        .cesta .contenedor-resumen .contenedor-info-resumen .span p {
+          color: #999; }
+      .cesta .contenedor-resumen .contenedor-info-resumen a {
+        margin-bottom: 10px; }
+      .cesta .contenedor-resumen .contenedor-info-resumen div {
+        margin: 10px; }
+    .cesta .contenedor-resumen .info-boton {
+      display: flex;
+      justify-content: center;
+      align-items: center; }
+
 footer {
   background-color: #101010;
   display: flex;
@@ -242,3 +476,112 @@ footer {
       margin: 10px; }
     footer .redes .tw {
       margin: 10px; }
+
+@media screen and (max-width: 500px) {
+  header .header div a img {
+    width: 40px;
+    height: 40px; }
+  header .user a {
+    font-size: 25px; } }
+
+@media screen and (max-width: 400px) {
+  header nav {
+    font-size: 12px; } }
+
+@media screen and (max-width: 800px) {
+  .grid-padre {
+    display: grid;
+    grid-template-columns: 45% 45%;
+    grid-template-areas: "h2 h2" "img1 img2" "img3 img4" "img5 img6" "reserva reserva" "img7 img8" "img9 img10" "img11 img12"; } }
+
+@media screen and (max-width: 800px) {
+  .grid-padre div h3 {
+    font-size: 13px; } }
+
+@media screen and (max-width: 800px) {
+  .comentario-faker {
+    flex-wrap: wrap; }
+    .comentario-faker img {
+      width: 300px;
+      height: 200px;
+      margin-top: 20px; } }
+
+@media screen and (max-width: 850px) {
+  .grid-tendencias {
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: center; }
+    .grid-tendencias .grid-item1 {
+      display: none; } }
+
+@media screen and (max-width: 750px) {
+  .grid-tendencias div a img {
+    height: 85%; } }
+
+@media screen and (max-width: 535px) {
+  .grid-tendencias div a img {
+    height: 70%; } }
+
+@media screen and (max-width: 450px) {
+  .grid-tendencias div a img {
+    height: 65%; } }
+
+@media screen and (max-width: 400px) {
+  .grid-tendencias {
+    grid-template-columns: repeat(1, 1fr);
+    width: 85%;
+    height: 100%; } }
+
+@media screen and (max-width: 740px) {
+  section .item .comen1 {
+    display: none; } }
+
+@media screen and (max-width: 650px) {
+  section .item {
+    flex-wrap: wrap; } }
+
+@media screen and (max-width: 720px) {
+  footer .redes {
+    display: flex;
+    flex-direction: column; }
+  footer .info {
+    display: flex;
+    flex-direction: column;
+    margin-left: 20px; } }
+
+@media screen and (max-width: 650px) {
+  footer .redes {
+    margin-bottom: 10px; }
+  footer div p {
+    font-size: 12px; } }
+
+@media screen and (max-width: 760px) {
+  .shop {
+    flex-wrap: wrap; }
+    .shop img {
+      width: 70%;
+      margin-bottom: 20px;
+      margin: 0px 0px 20px 0px; }
+    .shop div h1 {
+      font-size: 26px; }
+    .shop .info-shop {
+      width: 70%;
+      margin: 0px; }
+      .shop .info-shop a {
+        margin-bottom: 20px; } }
+
+@media screen and (max-width: 960px) {
+  .visuales .pictures {
+    display: flex;
+    flex-wrap: wrap; }
+    .visuales .pictures .img-fc {
+      margin: 15px; }
+    .visuales .pictures .contenedor-img img {
+      margin: 5px 5px 5px 5px; } }
+
+@media screen and (max-width: 620px) {
+  .cesta {
+    flex-wrap: wrap; }
+    .cesta .contenedor-carrito {
+      width: 95%; }
+    .cesta .contenedor-resumen {
+      width: 95%; } }

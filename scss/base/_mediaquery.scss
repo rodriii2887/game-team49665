@@ -1,0 +1,229 @@
+@media screen and (max-width:500px){
+    header{
+        .header{
+            div{
+                a{
+                    img{
+                        width: 40px;
+                        height: 40px;
+                    }
+                }
+            }
+        }
+        .user{
+            a{
+                font-size: 25px;
+            }
+        }
+        
+    }
+}
+
+@media screen and (max-width:400px){
+    header nav{
+        font-size: 12px;
+    }
+}
+
+@media screen and (max-width:800px){
+    .grid-padre{
+        display: grid;
+        grid-template-columns: 45% 45%;
+        grid-template-areas:
+            "h2 h2"
+            "img1 img2"
+            "img3 img4"
+            "img5 img6"
+            "reserva reserva"
+            "img7 img8"
+            "img9 img10"
+            "img11 img12";
+    }
+}
+
+@media screen and (max-width:800px){
+    .grid-padre{
+        div{
+            h3{
+                font-size: 13px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width:800px){
+    .comentario-faker{
+        flex-wrap: wrap;
+        img{
+            width: 300px;
+            height: 200px;
+            margin-top: 20px;
+        }
+    }
+}
+
+@media screen and (max-width:850px){
+    .grid-tendencias{
+        grid-template-columns: repeat(2, 1fr);
+        justify-content: center;
+        .grid-item1{
+            display: none;
+        }
+    }
+}
+
+@media screen and (max-width:750px){
+    .grid-tendencias{
+        div{
+            a{
+                img{
+                    height: 85%;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width:535px){
+    .grid-tendencias{
+        div{
+            a{
+                img{
+                    height: 70%;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width:450px){
+    .grid-tendencias{
+        div{
+            a{
+                img{
+                    height: 65%;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width:400px){
+    .grid-tendencias{
+        grid-template-columns: repeat(1, 1fr);
+        width: 85%;
+        height: 100%;
+        div{
+            a{
+                img{
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width:740px){
+    section{
+        .item{
+            .comen1{
+                display: none;
+            }
+        }
+    }    
+}
+
+@media screen and (max-width:650px){
+    section{
+        .item{
+            flex-wrap: wrap;
+        }
+    }
+}
+
+@media screen and (max-width:720px){
+    footer{
+        .redes{
+            display: flex;
+            flex-direction: column;
+        }
+        .info{
+            display: flex;
+            flex-direction: column;
+            margin-left: 20px;
+        }
+    }
+}
+
+@media screen and (max-width:650px){
+    footer{
+        .redes{
+            margin-bottom: 10px;
+        }
+        div{
+            p{
+                font-size: 12px;
+            }
+        }
+    }
+}
+
+                // FC24
+
+@media screen and (max-width:760px){
+    .shop{
+        flex-wrap: wrap;
+        img{
+            width: 70%;
+            margin-bottom: 20px;
+            margin: 0px 0px 20px 0px;
+        }
+        div{
+            h1{
+                font-size: 26px;
+            }
+        }
+        .info-shop{
+            width: 70%;
+            margin: 0px;
+            a{
+                margin-bottom: 20px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width:960px){
+    .visuales{
+        .pictures{
+            display: flex;
+            flex-wrap: wrap;
+            .img-fc{
+                margin: 15px;
+            }
+            .contenedor-img{
+                img{
+                    margin: 5px 5px 5px 5px;
+                }
+            }
+        }
+    }
+}
+
+
+              // CARRITO
+
+
+@media screen and (max-width:620px){
+    .cesta{
+        flex-wrap: wrap;
+        .contenedor-carrito{
+            width: 95%;
+        }
+        .contenedor-resumen{
+            width: 95%;
+        }
+    }
+}
+
+
+
