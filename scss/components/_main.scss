@@ -195,6 +195,11 @@ section{
             }
         }
     }
+    .titulo-comen{
+        color: #fff;
+        text-align: center;
+        margin-top: 20px;
+    }
     .item{
         display: flex;
         justify-content: center;
@@ -293,7 +298,7 @@ section{
 .registro{
     background-color:#323232;
     margin: 40px 0 40px 0;
-    min-height: 65vh;
+    min-height: 70.5vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -522,7 +527,7 @@ section{
 
 .cesta{
     display: flex;
-    min-height: 75vh;
+    min-height: 79.5vh;
     display: flex;
     justify-content: center;
     .contenedor-carrito{
