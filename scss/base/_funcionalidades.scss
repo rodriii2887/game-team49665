@@ -1,0 +1,24 @@
+// VARIABLE
+
+$color-principal:#323232;
+
+// LISTAS
+
+$font-size: 18px, 19px, 25px, 30px, 35px, 45px, 12px;
+
+// EXTENDS
+
+%flex-center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+// MIXIN
+
+@mixin flex($flex, $direction, $justy, $align){
+    display: $flex;
+    flex-direction: $direction;
+    justify-content: $justy;
+    align-items: $align;
+}

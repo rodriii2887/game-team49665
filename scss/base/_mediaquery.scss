@@ -21,7 +21,7 @@
 
 @media screen and (max-width:400px){
     header nav{
-        font-size: 12px;
+        font-size:nth($font-size, 7);
     }
 }
 
@@ -45,7 +45,7 @@
     .grid-padre{
         div{
             h3{
-                font-size: 13px;
+                font-size:nth($font-size, 7);
             }
         }
     }
@@ -161,7 +161,7 @@
         }
         div{
             p{
-                font-size: 12px;
+                font-size:nth($font-size, 7);
             }
         }
     }
@@ -179,7 +179,7 @@
         }
         div{
             h1{
-                font-size: 26px;
+                font-size:nth($font-size, 3);
             }
         }
         .info-shop{

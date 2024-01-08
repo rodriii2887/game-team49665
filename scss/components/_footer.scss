@@ -1,13 +1,10 @@
 footer{
     background-color: #101010;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
+    @include flex(flex, none, space-around, center);
     margin-top: 10px;
     bottom: 0;
     width: 100%;
     .info{
-        display: flex;
         margin-right: 20px;
         width: 70%;
         display: flex;
@@ -32,9 +29,7 @@ footer{
     }
     .redes{
         width: 20%;
-        display: flex;
-        justify-content: start;
-        align-items: end;
+        @include flex(flex, column, start, center);
         margin-right: 15px;
         div{
             a{

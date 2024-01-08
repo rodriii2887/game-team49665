@@ -21,18 +21,20 @@ header{
             a{
                 color: #f4f4f4;
                 text-decoration: none;
-                font-size: 30px;
+                font-size:nth($font-size, 4);
                 padding: 5px;
                 i{
+                    &:hover{
+                        color: rgb(255, 136, 0);
+                        transition: 0.1s;
+                    }
                 }
             }
         }
     }
     nav{
         background-color: #9c858571;
-        display: flex;
-        justify-content: center;
-        align-items: center;
+        @extend %flex-center;
         padding-top: 10px;
         padding-right: 20px;
         height: 25px;
@@ -44,14 +46,14 @@ header{
         }
             li{
                 padding: 20px;
-                &:hover{
-                    color: rgb(255, 136, 0);
-                    transition: 0.2s;
-                }
                 a{
                     text-decoration: none;
                     list-style: none;
                     color: #f4f4f4;
+                    &:hover{
+                        color: rgb(255, 136, 0);
+                        transition: 0.1s;
+                    }
                 }
             }
     }

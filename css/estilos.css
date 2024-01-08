@@ -1,3 +1,8 @@
+header nav, section .comentario-faker, section .item, .suscripcion a, .registro .inicio-sesion, .visuales h2, .visuales .video, .visuales .pictures, .visuales .pictures .img-fc, .cesta, .cesta .contenedor-resumen .info-boton {
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
 * {
   margin: 0;
   padding: 0;
@@ -27,11 +32,11 @@ header {
         text-decoration: none;
         font-size: 30px;
         padding: 5px; }
+        header .header .user a i:hover {
+          color: #ff8800;
+          transition: 0.1s; }
   header nav {
     background-color: #9c858571;
-    display: flex;
-    justify-content: center;
-    align-items: center;
     padding-top: 10px;
     padding-right: 20px;
     height: 25px;
@@ -42,13 +47,13 @@ header {
       list-style: none; }
     header nav li {
       padding: 20px; }
-      header nav li:hover {
-        color: #ff8800;
-        transition: 0.2s; }
       header nav li a {
         text-decoration: none;
         list-style: none;
         color: #f4f4f4; }
+        header nav li a:hover {
+          color: #ff8800;
+          transition: 0.1s; }
 
 .grid-padre {
   display: grid;
@@ -59,15 +64,20 @@ header {
   align-items: center;
   gap: 20px; }
   .grid-padre h2 {
+    color: #fff;
     grid-area: h2;
     margin-top: 50px;
-    background-color: #323232; }
+    font-size: 30px; }
     .grid-padre h2:hover {
       color: #ff8800;
       transition: 0.2s; }
     .grid-padre h2 a {
       grid-area: h2;
-      text-decoration: none; }
+      text-decoration: none;
+      color: #fff; }
+      .grid-padre h2 a:hover {
+        color: #ff5400;
+        transition: 0.2s; }
   .grid-padre div a img {
     width: 100%;
     height: 100%;
@@ -104,7 +114,7 @@ header {
     margin-top: 40px;
     width: 100%;
     margin-bottom: 20px;
-    background-color: #323232; }
+    font-size: 30px; }
   .grid-padre .img7 {
     grid-area: img7; }
   .grid-padre .img8 {
@@ -120,9 +130,6 @@ header {
 
 section .comentario-faker {
   margin-top: 20px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   background-color: #323232; }
   section .comentario-faker .boton {
     text-align: center;
@@ -140,8 +147,6 @@ section .titulo-comen {
   margin-top: 20px; }
 
 section .item {
-  display: flex;
-  justify-content: center;
   position: relative; }
   section .item .comen {
     border-radius: 10px;
@@ -150,6 +155,7 @@ section .item {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    align-items: start;
     position: relative;
     padding: 15px; }
     section .item .comen .usuarios {
@@ -166,6 +172,7 @@ section .item {
         display: flex;
         flex-direction: column;
         justify-content: center;
+        align-items: center;
         color: #fff;
         padding-top: 10px; }
         section .item .comen .usuarios .info .estrella {
@@ -181,13 +188,16 @@ section .item {
         section .item .comen .usuarios .info a {
           color: #fff;
           text-decoration: none; }
+          section .item .comen .usuarios .info a:hover {
+            color: #ff8800;
+            transition: 0.1s; }
     section .item .comen .lorem {
       margin: 5px;
       color: #999; }
 
 .suscripcion {
-  display: flex;
   padding: 20px;
+  display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
@@ -199,15 +209,11 @@ section .item {
     margin-top: 30px; }
   .suscripcion p {
     color: #999; }
-  .suscripcion a {
+  .suscripcion a img {
+    width: 10%;
     display: flex;
     justify-content: center;
     align-items: center; }
-    .suscripcion a img {
-      width: 10%;
-      display: flex;
-      justify-content: center;
-      align-items: center; }
 
 .registro {
   background-color: #323232;
@@ -215,24 +221,22 @@ section .item {
   min-height: 70.5vh;
   display: flex;
   flex-direction: column;
-  justify-content: center; }
+  justify-content: center;
+  align-items: none; }
   .registro h1 {
     color: #fff;
     font-size: 35px;
     text-align: center; }
   .registro .inicio-sesion {
-    display: flex;
-    justify-content: center;
-    align-items: center;
     width: 100%; }
     .registro .inicio-sesion a img {
       width: 50px;
       margin: 20px; }
   .registro .formulario {
     display: flex;
+    flex-direction: column;
     justify-content: center;
-    align-items: center;
-    flex-direction: column; }
+    align-items: center; }
     .registro .formulario input {
       width: 50%;
       height: 48px;
@@ -261,7 +265,7 @@ section .item {
     .grid-tendencias div h3 {
       position: absolute;
       color: #fff;
-      font-size: 15px;
+      font-size: 18px;
       margin: 15px;
       overflow: hidden;
       text-overflow: ellipsis;
@@ -286,7 +290,7 @@ section .item {
     border-radius: 25px;
     margin: 0 10px 0 20px; }
   .shop div h1 {
-    font-size: 36px;
+    font-size: 35px;
     color: #fff;
     margin: 20px; }
 
@@ -314,7 +318,8 @@ section .item {
   align-items: center; }
   .info-juego div h2 {
     color: #fff;
-    margin-top: 20px; }
+    margin-top: 20px;
+    font-size: 30px; }
   .info-juego p {
     color: #999;
     margin-inline: 20px;
@@ -324,37 +329,26 @@ section .item {
 .visuales h2 {
   color: #fff;
   margin: 20px;
+  font-size: 30px; }
+
+.visuales .pictures .img-fc {
+  width: 100%;
+  margin: 15px; }
+  .visuales .pictures .img-fc img {
+    width: 100%;
+    border-radius: 15px;
+    margin: 10px 10px 10px 10px; }
+
+.visuales .pictures .contenedor-img {
+  width: 100%;
   display: flex;
   justify-content: center;
-  align-items: center; }
-
-.visuales .video {
-  display: flex;
-  justify-content: center; }
-
-.visuales .pictures {
-  display: flex;
-  justify-content: center;
-  align-items: center; }
-  .visuales .pictures .img-fc {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    margin: 15px; }
-    .visuales .pictures .img-fc img {
-      width: 100%;
-      border-radius: 15px;
-      margin: 10px 10px 10px 10px; }
-  .visuales .pictures .contenedor-img {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap; }
-    .visuales .pictures .contenedor-img img {
-      width: 45%;
-      border-radius: 15px;
-      margin: 10px;
-      height: 100%; }
+  flex-wrap: wrap; }
+  .visuales .pictures .contenedor-img img {
+    width: 45%;
+    border-radius: 15px;
+    margin: 10px;
+    height: 100%; }
 
 .configuraciones {
   display: flex;
@@ -362,7 +356,8 @@ section .item {
   .configuraciones h2 {
     text-align: center;
     color: #fff;
-    margin: 30px 20px 30px 20px; }
+    margin: 30px 20px 30px 20px;
+    font-size: 30px; }
   .configuraciones .config {
     display: flex;
     flex-wrap: wrap;
@@ -385,10 +380,7 @@ section .item {
       color: #999; }
 
 .cesta {
-  display: flex;
-  min-height: 79.5vh;
-  display: flex;
-  justify-content: center; }
+  min-height: 79.5vh; }
   .cesta .contenedor-carrito {
     width: 70%;
     margin: 20px;
@@ -396,11 +388,13 @@ section .item {
     flex-direction: column; }
     .cesta .contenedor-carrito h2 {
       color: #fff;
-      text-align: start; }
+      text-align: start;
+      font-size: 30px; }
     .cesta .contenedor-carrito .contenedor-info-carrito {
-      display: flex;
       background-color: #323232;
+      display: flex;
       flex-direction: column;
+      justify-content: center;
       align-items: center;
       border-radius: 10px;
       padding: 10px; }
@@ -423,7 +417,8 @@ section .item {
     .cesta .contenedor-resumen h2 {
       color: #fff;
       text-align: start;
-      position: sticky; }
+      position: sticky;
+      font-size: 30px; }
     .cesta .contenedor-resumen .contenedor-info-resumen {
       display: flex;
       flex-direction: column;
@@ -438,21 +433,17 @@ section .item {
         margin-bottom: 10px; }
       .cesta .contenedor-resumen .contenedor-info-resumen div {
         margin: 10px; }
-    .cesta .contenedor-resumen .info-boton {
-      display: flex;
-      justify-content: center;
-      align-items: center; }
 
 footer {
   background-color: #101010;
   display: flex;
+  flex-direction: none;
   justify-content: space-around;
   align-items: center;
   margin-top: 10px;
   bottom: 0;
   width: 100%; }
   footer .info {
-    display: flex;
     margin-right: 20px;
     width: 70%;
     display: flex;
@@ -469,8 +460,9 @@ footer {
   footer .redes {
     width: 20%;
     display: flex;
+    flex-direction: column;
     justify-content: start;
-    align-items: end;
+    align-items: center;
     margin-right: 15px; }
     footer .redes div a img:hover {
       transform: scale(1.2);
@@ -501,7 +493,7 @@ footer {
 
 @media screen and (max-width: 800px) {
   .grid-padre div h3 {
-    font-size: 13px; } }
+    font-size: 12px; } }
 
 @media screen and (max-width: 800px) {
   .comentario-faker {
@@ -567,7 +559,7 @@ footer {
       margin-bottom: 20px;
       margin: 0px 0px 20px 0px; }
     .shop div h1 {
-      font-size: 26px; }
+      font-size: 25px; }
     .shop .info-shop {
       width: 70%;
       margin: 0px; }
