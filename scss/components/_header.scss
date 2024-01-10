@@ -16,10 +16,36 @@ header{
                 }
             }
         }
+
+        .titulo-principal{
+            h1{
+                a{
+                    background: linear-gradient(#1497be, #1c2aec);
+                    color: transparent;
+                    text-decoration: none;
+                    list-style: none;
+                    margin-left: 30px;
+                    background-clip: text;
+                    -webkit-background-clip: text;
+                    -moz-background-clip: text;
+                    animation: titulo 5s linear infinite;
+                    @keyframes titulo {
+                        0%{
+                            filter: hue-rotate(0deg)
+                        }
+                        100%{
+                            filter: hue-rotate(360deg)
+                        }
+                    }
+                }
+            }
+        }
+
+
         .user{
             margin-right: 20px;
             a{
-                color: #f4f4f4;
+                color: $color-titulos;
                 text-decoration: none;
                 font-size:nth($font-size, 4);
                 padding: 5px;
@@ -49,7 +75,7 @@ header{
                 a{
                     text-decoration: none;
                     list-style: none;
-                    color: #f4f4f4;
+                    color: $color-titulos;
                     &:hover{
                         color: rgb(255, 136, 0);
                         transition: 0.1s;

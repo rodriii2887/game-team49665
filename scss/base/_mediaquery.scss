@@ -9,19 +9,42 @@
                     }
                 }
             }
-        }
-        .user{
-            a{
-                font-size: 25px;
+
+            .titulo-principal{
+                h1{
+                    a{
+                        font-size: 25px;
+                        margin-left: 10px;
+                    }
+                }
+            }
+        
+            .user{
+                a{
+                    font-size: 25px;
+                }
             }
         }
-        
     }
 }
 
 @media screen and (max-width:400px){
-    header nav{
-        font-size:nth($font-size, 7);
+    header{
+        nav{
+            font-size:nth($font-size, 7);
+        }
+    
+        .header{
+            .titulo-principal{
+                h1{
+                    a{
+                        font-size: 20px;
+                        margin-left: 5px;
+                    }
+                }
+            }
+        
+        }
     }
 }
 

@@ -25,10 +25,26 @@ header {
       width: 50px;
       height: 50px;
       margin-left: 20px; }
+    header .header .titulo-principal h1 a {
+      background: linear-gradient(#1497be, #1c2aec);
+      color: transparent;
+      text-decoration: none;
+      list-style: none;
+      margin-left: 30px;
+      background-clip: text;
+      -webkit-background-clip: text;
+      -moz-background-clip: text;
+      animation: titulo 5s linear infinite; }
+
+@keyframes titulo {
+  0% {
+    filter: hue-rotate(0deg); }
+  100% {
+    filter: hue-rotate(360deg); } }
     header .header .user {
       margin-right: 20px; }
       header .header .user a {
-        color: #f4f4f4;
+        color: #fff;
         text-decoration: none;
         font-size: 30px;
         padding: 5px; }
@@ -50,7 +66,7 @@ header {
       header nav li a {
         text-decoration: none;
         list-style: none;
-        color: #f4f4f4; }
+        color: #fff; }
         header nav li a:hover {
           color: #ff8800;
           transition: 0.1s; }
@@ -86,7 +102,10 @@ header {
     margin-top: 10px; }
     .grid-padre div a img:hover {
       transform: scale(1.05);
-      transition: 0.2s; }
+      transition: 0.2s;
+      -webkit-box-shadow: 2px 2px 19px 0px white;
+      -moz-box-shadow: 2px 2px 19px 0px white;
+      box-shadow: 2px 2px 19px 0px white; }
   .grid-padre div h3 {
     color: #fff;
     font-size: 18px;
@@ -204,7 +223,7 @@ section .item {
   text-align: center;
   background-color: #323232; }
   .suscripcion h3 {
-    color: #f4f4f4;
+    color: #fff;
     text-align: center;
     margin-top: 30px; }
   .suscripcion p {
@@ -478,12 +497,18 @@ footer {
   header .header div a img {
     width: 40px;
     height: 40px; }
-  header .user a {
+  header .header .titulo-principal h1 a {
+    font-size: 25px;
+    margin-left: 10px; }
+  header .header .user a {
     font-size: 25px; } }
 
 @media screen and (max-width: 400px) {
   header nav {
-    font-size: 12px; } }
+    font-size: 12px; }
+  header .header .titulo-principal h1 a {
+    font-size: 20px;
+    margin-left: 5px; } }
 
 @media screen and (max-width: 800px) {
   .grid-padre {
