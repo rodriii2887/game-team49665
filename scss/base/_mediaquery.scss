@@ -103,17 +103,26 @@
                     height: 85%;
                 }
             }
+            h3{
+                margin: 10px;
+            }
         }
     }
 }
 
 @media screen and (max-width:535px){
     .grid-tendencias{
+        gap: 15px;
         div{
             a{
                 img{
                     height: 70%;
+                    margin: 10px;
+                    
                 }
+            }
+            h3{
+                margin: 5px;
             }
         }
     }
@@ -124,7 +133,9 @@
         div{
             a{
                 img{
-                    height: 65%;
+                    height: 80%;
+                    width: 100%;
+                    margin: 0px;
                 }
             }
         }
@@ -134,12 +145,14 @@
 @media screen and (max-width:400px){
     .grid-tendencias{
         grid-template-columns: repeat(1, 1fr);
-        width: 85%;
         height: 100%;
         div{
             a{
                 img{
                 }
+            }
+            h3{
+                margin: 15px 15px 15px 0px;
             }
         }
     }

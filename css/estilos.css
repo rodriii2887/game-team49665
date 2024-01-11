@@ -242,7 +242,7 @@ section .item {
   flex-direction: column;
   justify-content: center;
   align-items: none; }
-  .registro h1 {
+  .registro h2 {
     color: #fff;
     font-size: 35px;
     text-align: center; }
@@ -251,6 +251,9 @@ section .item {
     .registro .inicio-sesion a img {
       width: 50px;
       margin: 20px; }
+      .registro .inicio-sesion a img:hover {
+        transform: scale(1.1);
+        transition: 0.2s; }
   .registro .formulario {
     display: flex;
     flex-direction: column;
@@ -265,6 +268,9 @@ section .item {
       border: 0;
       border-radius: 10px;
       background-color: rgba(15, 15, 15, 0.4); }
+      .registro .formulario input:hover {
+        border: 2px solid #ff8800;
+        transition: 0.1s; }
 
 .titulo {
   text-align: center;
@@ -276,9 +282,7 @@ section .item {
   grid-template-columns: repeat(3, 1fr);
   grid-auto-rows: 250px;
   gap: 30px;
-  margin: 30px;
-  object-fit: cover;
-  position: relative; }
+  margin: 30px; }
   .grid-tendencias div {
     position: relative; }
     .grid-tendencias div h3 {
@@ -292,13 +296,16 @@ section .item {
       -webkit-line-clamp: 1;
       -webkit-box-orient: vertical; }
     .grid-tendencias div a img {
-      width: 100%;
+      width: 95%;
       height: 90%;
       border-radius: 20px;
-      position: relative; }
+      margin-left: 10px; }
       .grid-tendencias div a img:hover {
         transform: scale(1.05);
-        transition: 0.2s; }
+        transition: 0.2s;
+        -webkit-box-shadow: 2px 2px 19px 0px white;
+        -moz-box-shadow: 2px 2px 19px 0px white;
+        box-shadow: 2px 2px 19px 0px white; }
 
 .shop {
   display: flex;
@@ -537,21 +544,31 @@ footer {
 
 @media screen and (max-width: 750px) {
   .grid-tendencias div a img {
-    height: 85%; } }
+    height: 85%; }
+  .grid-tendencias div h3 {
+    margin: 10px; } }
 
 @media screen and (max-width: 535px) {
-  .grid-tendencias div a img {
-    height: 70%; } }
+  .grid-tendencias {
+    gap: 15px; }
+    .grid-tendencias div a img {
+      height: 70%;
+      margin: 10px; }
+    .grid-tendencias div h3 {
+      margin: 5px; } }
 
 @media screen and (max-width: 450px) {
   .grid-tendencias div a img {
-    height: 65%; } }
+    height: 80%;
+    width: 100%;
+    margin: 0px; } }
 
 @media screen and (max-width: 400px) {
   .grid-tendencias {
     grid-template-columns: repeat(1, 1fr);
-    width: 85%;
-    height: 100%; } }
+    height: 100%; }
+    .grid-tendencias div h3 {
+      margin: 15px 15px 15px 0px; } }
 
 @media screen and (max-width: 740px) {
   section .item .comen1 {
