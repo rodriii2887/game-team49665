@@ -206,7 +206,8 @@ section{
         margin-top: 20px;
     }
     .item{
-        @extend %flex-center;
+        display: flex;
+        justify-content: center;
         position: relative;
         .comen{
             border-radius: 10px;
@@ -215,6 +216,7 @@ section{
             @include flex(flex, column, space-between, start);
             position: relative;
             padding: 15px;
+            width: calc(100% - 30px);
             .usuarios{
                 display: flex;
                 .comentarios-user{
@@ -241,10 +243,14 @@ section{
                         height: 12px;
                         width: 80px;
                         position: relative;
-                        transform-origin: left;
                         transform: scale(.8);
                     }
                     a{
+                        overflow: hidden;
+                        text-overflow: ellipsis;
+                        display: -webkit-box;
+                        -webkit-line-clamp: 1;
+                        -webkit-box-orient: vertical;
                         color: $color-titulos;
                         text-decoration: none;
                         &:hover{
@@ -259,6 +265,11 @@ section{
                 margin: 5px;
                 color: $color-secundario;
                 p{
+                    -webkit-line-clamp: 3;
+                    -webkit-box-orient: vertical;
+                    display: -webkit-box;
+                    overflow: hidden;
+                    text-overflow: ellipsis;
                 }
             }
         }      

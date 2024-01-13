@@ -1,4 +1,4 @@
-header nav, section .comentario-faker, section .item, .suscripcion a, .registro .inicio-sesion, .visuales h2, .visuales .video, .visuales .pictures, .visuales .pictures .img-fc, .cesta, .cesta .contenedor-resumen .info-boton {
+header nav, section .comentario-faker, .suscripcion a, .registro .inicio-sesion, .visuales h2, .visuales .video, .visuales .pictures, .visuales .pictures .img-fc, .cesta, .cesta .contenedor-resumen .info-boton {
   display: flex;
   justify-content: center;
   align-items: center; }
@@ -166,6 +166,8 @@ section .titulo-comen {
   margin-top: 20px; }
 
 section .item {
+  display: flex;
+  justify-content: center;
   position: relative; }
   section .item .comen {
     border-radius: 10px;
@@ -176,7 +178,8 @@ section .item {
     justify-content: space-between;
     align-items: start;
     position: relative;
-    padding: 15px; }
+    padding: 15px;
+    width: calc(100% - 30px); }
     section .item .comen .usuarios {
       display: flex; }
       section .item .comen .usuarios .comentarios-user {
@@ -202,9 +205,13 @@ section .item {
           height: 12px;
           width: 80px;
           position: relative;
-          transform-origin: left;
           transform: scale(0.8); }
         section .item .comen .usuarios .info a {
+          overflow: hidden;
+          text-overflow: ellipsis;
+          display: -webkit-box;
+          -webkit-line-clamp: 1;
+          -webkit-box-orient: vertical;
           color: #fff;
           text-decoration: none; }
           section .item .comen .usuarios .info a:hover {
@@ -213,6 +220,12 @@ section .item {
     section .item .comen .lorem {
       margin: 5px;
       color: #999; }
+      section .item .comen .lorem p {
+        -webkit-line-clamp: 3;
+        -webkit-box-orient: vertical;
+        display: -webkit-box;
+        overflow: hidden;
+        text-overflow: ellipsis; }
 
 .suscripcion {
   padding: 20px;
