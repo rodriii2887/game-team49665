@@ -1,3 +1,20 @@
+.hero{
+    div{
+        div{
+            div{
+                .carousel-caption{
+                    background-color: #ffffff5d;
+                    h5{
+                        color: black;
+                    }
+                    p{
+                        color: black;
+                    }
+                }
+            }
+        }
+    }
+}
 .grid-padre{
     display: grid;
     grid-template-areas:

@@ -108,6 +108,13 @@
             }
         }
     }
+    .registro{
+        .formulario{
+            input{
+                width: 70%;
+            }
+        }
+    }
 }
 
 @media screen and (max-width:535px){
@@ -130,6 +137,8 @@
 
 @media screen and (max-width:450px){
     .grid-tendencias{
+        grid-template-columns: repeat(1, 1fr);
+        height: 100%;
         div{
             a{
                 img{
@@ -143,20 +152,17 @@
 }
 
 @media screen and (max-width:400px){
-    .grid-tendencias{
-        grid-template-columns: repeat(1, 1fr);
-        height: 100%;
-        div{
-            a{
-                img{
-                }
+    div{
+        a{
+            img{
             }
-            h3{
-                margin: 15px 15px 15px 0px;
-            }
+        }
+        h3{
+            margin: 15px 15px 15px 0px;
         }
     }
 }
+
 
 @media screen and (max-width:740px){
     section{

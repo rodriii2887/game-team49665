@@ -31,6 +31,7 @@ header {
       text-decoration: none;
       list-style: none;
       margin-left: 30px;
+      margin-top: 5px;
       background-clip: text;
       -webkit-background-clip: text;
       -moz-background-clip: text;
@@ -60,7 +61,8 @@ header {
     line-height: 0; }
     header nav ul {
       display: flex;
-      list-style: none; }
+      list-style: none;
+      margin-top: 5px; }
     header nav li {
       padding: 20px; }
       header nav li a {
@@ -70,6 +72,13 @@ header {
         header nav li a:hover {
           color: #ff8800;
           transition: 0.1s; }
+
+.hero div div div .carousel-caption {
+  background-color: #ffffff5d; }
+  .hero div div div .carousel-caption h5 {
+    color: black; }
+  .hero div div div .carousel-caption p {
+    color: black; }
 
 .grid-padre {
   display: grid;
@@ -559,7 +568,9 @@ footer {
   .grid-tendencias div a img {
     height: 85%; }
   .grid-tendencias div h3 {
-    margin: 10px; } }
+    margin: 10px; }
+  .registro .formulario input {
+    width: 70%; } }
 
 @media screen and (max-width: 535px) {
   .grid-tendencias {
@@ -571,17 +582,17 @@ footer {
       margin: 5px; } }
 
 @media screen and (max-width: 450px) {
-  .grid-tendencias div a img {
-    height: 80%;
-    width: 100%;
-    margin: 0px; } }
-
-@media screen and (max-width: 400px) {
   .grid-tendencias {
     grid-template-columns: repeat(1, 1fr);
     height: 100%; }
-    .grid-tendencias div h3 {
-      margin: 15px 15px 15px 0px; } }
+    .grid-tendencias div a img {
+      height: 80%;
+      width: 100%;
+      margin: 0px; } }
+
+@media screen and (max-width: 400px) {
+  div h3 {
+    margin: 15px 15px 15px 0px; } }
 
 @media screen and (max-width: 740px) {
   section .item .comen1 {
